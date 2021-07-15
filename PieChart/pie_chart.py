@@ -1,4 +1,4 @@
-import plotly.graph_objects as go
+import plotly.graph_objects as plot
 import numpy as np
 
 np.random.seed(45)
@@ -10,7 +10,7 @@ x = [f'Product {i}' for i in range(size)]
 y = np.random.randint(low=0, high=100, size=size)
 
 # creating a Pie Chart
-fig = go.Figure(data=[go.Pie(labels=x, values=y)])
+fig = plot.Figure(data=[plot.Pie(labels=x, values=y)])
 
 fig.layout.template = 'plotly_dark'
 fig.update_traces(textposition='inside', textinfo='percent+label')
