@@ -17,7 +17,7 @@ fig = plot.box(df, y="value", facet_col="quartilemethod", color="quartilemethod"
 fig.layout.template = 'plotly_dark'
 
 fig.update_layout(
-    title='Histogram Plot',
+    title='Box Plot',
     xaxis_title='X Axis Title',
     yaxis_title='Y Axis Title',
     xaxis_tickangle=-30,
